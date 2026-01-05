@@ -1,0 +1,59 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e3f2fd, #f3e5f5);
+    padding: 1rem;
+}
+
+.inputGroup {
+    position: relative;
+    width: 100%;
+}
+
+.icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-dim);
+    pointer-events: none;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 12px 12px 45px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input:focus {
+    outline: none;
+    background: white;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(129, 199, 132, 0.2);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+}
+
+.divider span {
+    padding: 0 10px;
+}

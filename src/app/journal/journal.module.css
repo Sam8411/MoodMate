@@ -1,0 +1,132 @@
+.pageContainer {
+    min-height: 100vh;
+    background: var(--bg-gradient);
+}
+
+.header {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.select {
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--glass-border);
+    background: white;
+    font-family: inherit;
+    color: var(--text-main);
+}
+
+.textarea {
+    width: 100%;
+    min-height: 300px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.5);
+    resize: vertical;
+    font-family: inherit;
+    margin-bottom: 2rem;
+    outline: none;
+}
+
+.textarea:focus {
+    background: white;
+    border-color: var(--primary);
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+    color: var(--text-dim);
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.moodTag {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    background: #eee;
+    text-transform: capitalize;
+}
+
+.moodTag[data-mood='happy'] {
+    background: #ffe082;
+    color: #5d4037;
+}
+
+.moodTag[data-mood='sad'] {
+    background: #90caf9;
+    color: #0d47a1;
+}
+
+.moodTag[data-mood='anxious'] {
+    background: #ffcc80;
+    color: #e65100;
+}
+
+.moodTag[data-mood='grateful'] {
+    background: #a5d6a7;
+    color: #1b5e20;
+}
+
+.cardText {
+    color: var(--text-main);
+    line-height: 1.5;
+    white-space: pre-wrap;
+    flex: 1;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.insight {
+    font-size: 0.85rem;
+    color: var(--primary);
+    font-style: italic;
+}
+
+.deleteBtn {
+    background: transparent;
+    border: none;
+    color: var(--text-dim);
+    cursor: pointer;
+    padding: 4px;
+}
+
+.deleteBtn:hover {
+    color: var(--error);
+}

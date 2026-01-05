@@ -1,0 +1,85 @@
+.pageContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-gradient);
+}
+
+.header {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0 2rem;
+}
+
+.tab {
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-md);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: var(--text-dim);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+}
+
+.activeTab {
+    background: white;
+    color: var(--primary);
+    box-shadow: var(--shadow-sm);
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem 2rem;
+}
+
+.albumArt {
+    width: 200px;
+    height: 200px;
+    border-radius: var(--radius-md);
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.playlist {
+    margin-top: 2rem;
+    border-top: 1px solid var(--glass-border);
+    padding-top: 1rem;
+}
+
+.trackItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.trackItem:hover {
+    background: rgba(0, 0, 0, 0.05);
+}

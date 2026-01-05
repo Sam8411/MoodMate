@@ -1,0 +1,51 @@
+.pageContainer {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    /* Warmer, kid-friendly */
+}
+
+.header {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.tab {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 0px #ffe0b2;
+    transition: transform 0.2s;
+    display: flex;
+    gap: 0.5rem;
+    color: #fb8c00;
+}
+
+.activeTab {
+    background: #ffab40;
+    color: white;
+    box-shadow: 0 4px 0px #e65100;
+}
+
+.tab:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
